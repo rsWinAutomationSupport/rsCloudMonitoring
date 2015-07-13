@@ -1,0 +1,12 @@
+﻿type        : agent.load_average
+label       : Load average check Exceeds 20
+disabled    : false
+timeout     : 30
+alarms      :
+   label    : Load average check Exceeds 20
+   notification_plan_id  : npTechnicalContactsEmail
+        criteria  :|
+        if (metric['15m'] > 20) {
+          return new AlarmStatus(CRITICAL, '15 Minute Load Average is #{15m}');
+        }
+        return new AlarmStatus(OK, '15 Minute Load Average is #{15m}');
