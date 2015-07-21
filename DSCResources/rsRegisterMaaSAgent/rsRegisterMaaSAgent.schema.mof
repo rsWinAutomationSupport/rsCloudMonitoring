@@ -1,7 +1,6 @@
 [ClassVersion("1.0.0.0"), FriendlyName("rsRegisterMaaSAgent")]
 class rsRegisterMaaSAgent : OMI_BaseResource
 {
-	[write,ValueMap{"Present", "Absent"},Values{"Present", "Absent"}] string Ensure;
 	[key] string username;
 	[write, Description("Secure API Key."),EmbeddedInstance("MSFT_Credential")] String apikey;
 };
