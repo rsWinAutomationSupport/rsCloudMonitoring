@@ -41,13 +41,20 @@ function Set-TargetResource{
         [pscredential]$apikey
     )
 
-    $apikey = ExtractAPIKey $apikey
+    [string]$apikey = ExtractAPIKey $apikey
     if(Test-Path "C:\Program Files\Rackspace Monitoring"){$binPath = "C:\Program Files\Rackspace Monitoring\rackspace-monitoring-agent.exe"}
     elseif(Test-Path "C:\Program Files (x86)\Rackspace Monitoring"){$binPath = "C:\Program Files (x86)\Rackspace Monitoring\rackspace-monitoring-agent.exe"}
     else{throw "Monitoring Agent Executable not located on this system. Please ensure the package has been deployed and rerun this configuration"}
-    $dowhat = "--setup --username $($userName) --apikey $($apikey)"
 
-    Write-Verbose "Executing MaaS agent configuration to register the agent with Cloud Intelligence"
-    Write-Verbose "Executing: $($binPath) $($dowhat)"
-    Start-Process $binPath $dowhat -Wait -NoNewWindow
+    Write-Verbose "Executing MaaS agent executable to register the server with Cloud Intelligence"
+    Write-Verbose "Executing: $($binPath) --setup --username $($userName) --apikey $($apikey)"
+    & $binPath --setup --username $($userName) --apikey $($apikey) | Out-File C:\maas_configure.txt
+    Write-Verbose "LASTEXITCODE: $($LASTEXITCODE)"
+    if(((gc C:\maas_configure.txt).Contains("Agent successfuly connected!")) -and ($LASTEXITCODE -eq 0)){
+        Write-Verbose "Agent was sucessfully registered to cloud Monitoring"
+        Restart-Service 'Rackspace Monitoring Agent'
+    }
+    else{
+        throw "Error registering MaaS agent. Please check C:\maas_configure.txt for errors"
+    }
 }
