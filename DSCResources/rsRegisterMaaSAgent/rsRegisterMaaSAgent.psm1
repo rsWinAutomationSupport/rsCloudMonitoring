@@ -9,6 +9,10 @@ function Get-TargetResource{
         [ValidateNotNullOrEmpty()]
         [pscredential]$apikey
     )
+
+    @{
+        "username" = $userName
+    }
 }
 function Test-TargetResource{
     [OutputType([boolean])]
