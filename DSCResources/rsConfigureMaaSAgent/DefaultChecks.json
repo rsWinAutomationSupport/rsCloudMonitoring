@@ -1,0 +1,8 @@
+{
+    "name":  [
+                 "Ping",
+                 "LoadAVG",
+                 "DiskUse",
+                 "All"
+             ]
+}
