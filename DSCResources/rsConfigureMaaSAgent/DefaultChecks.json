@@ -11,6 +11,7 @@
                           "ConfigPath":  "C:\\ProgramData\\Rackspace Monitoring\\config\\rackspace-monitoring-agent.conf.d\\RS_Default_UsedDiskSpace.yml",
                           "CheckName":  "UsedDiskSpace"
                       },
+    "All":  "",
     "Ping":  {
                  "LocalURL":  "C:\\Program Files\\WindowsPowerShell\\Modules\\rsCloudMonitoring\\RS_Default_Checks\\RS_Default_Ping.yml",
                  "ConfigURL":  "https://raw.githubusercontent.com/rsWinAutomationSupport/rsCloudMonitoring/rsConfigureMaaSAgent/DSCResources/RS_Default_Checks/RS_Default_Ping.yml",
