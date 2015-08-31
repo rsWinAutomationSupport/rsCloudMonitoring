@@ -1,19 +1,19 @@
 {
     "LoadAVG":  {
-                    "LocalURL":  "C:\\Program Files\\WindowsPowerShell\\Modules\\rsCloudMonitoring\\RS_Default_Checks\\RS_Default_LoadAVG.yml",
+                    "LocalURL":  "C:\\Program Files\\WindowsPowerShell\\Modules\\rsCloudMonitoring\\DSCResources\\RS_Default_Checks\\RS_Default_LoadAVG.yml",
                     "ConfigURL":  "https://raw.githubusercontent.com/rsWinAutomationSupport/rsCloudMonitoring/rsConfigureMaaSAgent/DSCResources/RS_Default_Checks/RS_Default_LoadAVG.yml",
                     "ConfigPath":  "C:\\ProgramData\\Rackspace Monitoring\\config\\rackspace-monitoring-agent.conf.d\\RS_Default_LoadAVG.yml",
                     "CheckName":  "LoadAVG"
                 },
     "UsedDiskSpace":  {
-                          "LocalURL":  "C:\\Program Files\\WindowsPowerShell\\Modules\\rsCloudMonitoring\\RS_Default_Checks\\RS_Default_UsedDiskSpace.yml",
+                          "LocalURL":  "C:\\Program Files\\WindowsPowerShell\\Modules\\rsCloudMonitoring\\DSCResources\\RS_Default_Checks\\RS_Default_UsedDiskSpace.yml",
                           "ConfigURL":  "https://raw.githubusercontent.com/rsWinAutomationSupport/rsCloudMonitoring/rsConfigureMaaSAgent/DSCResources/RS_Default_Checks/RS_Default_UsedDiskSpace.yml",
                           "ConfigPath":  "C:\\ProgramData\\Rackspace Monitoring\\config\\rackspace-monitoring-agent.conf.d\\RS_Default_UsedDiskSpace.yml",
                           "CheckName":  "UsedDiskSpace"
                       },
     "All":  "",
     "Ping":  {
-                 "LocalURL":  "C:\\Program Files\\WindowsPowerShell\\Modules\\rsCloudMonitoring\\RS_Default_Checks\\RS_Default_Ping.yml",
+                 "LocalURL":  "C:\\Program Files\\WindowsPowerShell\\Modules\\rsCloudMonitoring\\DSCResources\\RS_Default_Checks\\RS_Default_Ping.yml",
                  "ConfigURL":  "https://raw.githubusercontent.com/rsWinAutomationSupport/rsCloudMonitoring/rsConfigureMaaSAgent/DSCResources/RS_Default_Checks/RS_Default_Ping.yml",
                  "ConfigPath":  "C:\\ProgramData\\Rackspace Monitoring\\config\\rackspace-monitoring-agent.conf.d\\RS_Default_Ping.yml",
                  "CheckName":  "Ping"
