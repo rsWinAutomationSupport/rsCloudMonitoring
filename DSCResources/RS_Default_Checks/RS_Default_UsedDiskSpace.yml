@@ -6,7 +6,7 @@ timeout     : 30
 details     :
     target  : C:
 alarms      :
-    techs   :
+    alarm1  :
         label                 : disk used alarm
         notification_plan_id  : Rackspace Managed Operations - DevOps
         criteria              : |

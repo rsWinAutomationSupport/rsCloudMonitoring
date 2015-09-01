@@ -4,7 +4,7 @@ disabled    : false
 target_hostname : 
 count       : 5
 alarms      :
-    techs   :
+    alarm1  :
         label                 : Remote Ping check
         notification_plan_id  : Rackspace Managed Operations - DevOps
         criteria              : |
