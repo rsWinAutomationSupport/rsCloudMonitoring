@@ -6,7 +6,7 @@ count       : 5
 alarms      :
     techs   :
         label                 : Remote Ping check
-        notification_plan_id  : npTechnicalContactsEmail
+        notification_plan_id  : Rackspace Managed Operations - DevOps
         criteria              : |
         if (metric['available'] < 80) {
           return new AlarmStatus(CRITICAL, 'Packet loss is greater than 20%');
