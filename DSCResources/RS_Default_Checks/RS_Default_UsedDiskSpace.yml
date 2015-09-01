@@ -1,10 +1,10 @@
 ﻿type        : agent.filesystem
-label       : Check for Main Disk
+label       : RS_Default_UsedDiskSpace
 disabled    : false
 period      : 60
 timeout     : 30
 details     :
-    target  : C:
+    target  : C:\
 alarms      :
     alarm1  :
         label                 : disk used alarm

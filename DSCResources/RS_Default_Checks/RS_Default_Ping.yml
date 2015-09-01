@@ -1,13 +1,20 @@
-﻿type        : remote.ping
-label       : Server Ping Check
-disabled    : false
-target_hostname : 
-count       : 5
-alarms      :
-    alarm1  :
-        label                 : Remote Ping check
-        notification_plan_id  : Rackspace Managed Operations - DevOps
-        criteria              : |
+﻿type: remote.ping
+label: RS_Default_Ping
+disabled: false
+period: 60
+timeout: 30
+details:
+	count: 5
+monitoring_zones_poll:
+    - mzdfw
+    - mziad
+    - mzord
+target_alias: public1_v4
+alarms:
+    packet-loss:
+        label: Ping v4 packet loss
+        notification_plan_id: Rackspace Managed Operations - DevOps
+        criteria: |
         if (metric['available'] < 80) {
           return new AlarmStatus(CRITICAL, 'Packet loss is greater than 20%');
         }

@@ -1,6 +1,7 @@
 ﻿type        : agent.load_average
-label       : Load average check Exceeds 20
+label       : RS_Default_LoadAVG
 disabled    : false
+period      : 60
 timeout     : 30
 alarms      :
     alarm1  :
@@ -11,3 +12,7 @@ alarms      :
           return new AlarmStatus(CRITICAL, '15 Minute Load Average is #{15m}');
         }
         return new AlarmStatus(OK, '15 Minute Load Average is #{15m}');
+		
+		
+		
+		Load Average checks are not supported on Windows.
