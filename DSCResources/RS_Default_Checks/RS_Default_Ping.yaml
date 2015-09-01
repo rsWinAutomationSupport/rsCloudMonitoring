@@ -4,7 +4,7 @@ disabled: false
 period: 60
 timeout: 30
 details:
-	count: 5
+   count: 5
 monitoring_zones_poll:
     - mzdfw
     - mziad

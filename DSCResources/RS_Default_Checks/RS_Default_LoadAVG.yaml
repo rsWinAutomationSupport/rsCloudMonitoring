@@ -12,7 +12,5 @@ alarms      :
           return new AlarmStatus(CRITICAL, '15 Minute Load Average is #{15m}');
         }
         return new AlarmStatus(OK, '15 Minute Load Average is #{15m}');
-		
-		
-		
-		Load Average checks are not supported on Windows.
+
+***Load Average checks are not supported on Windows.
