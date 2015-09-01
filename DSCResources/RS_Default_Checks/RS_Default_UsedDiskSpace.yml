@@ -1,14 +1,14 @@
 ﻿type        : agent.filesystem
-label       : Check for Main Disk
+label       : RS_Default_UsedDiskSpace
 disabled    : false
 period      : 60
 timeout     : 30
 details     :
-    target  : C:
+    target  : C:\
 alarms      :
-    techs   :
+    alarm1  :
         label                 : disk used alarm
-        notification_plan_id  : npTechnicalContactsEmail
+        notification_plan_id  : Rackspace Managed Operations - DevOps
         criteria              : |
             if (percentage(metric['used'], metric['total']) > 90) {
                 return new AlarmStatus(CRITICAL, 'Less than 10% free space available.');

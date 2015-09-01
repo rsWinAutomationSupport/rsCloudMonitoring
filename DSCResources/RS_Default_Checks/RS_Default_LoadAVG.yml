@@ -1,12 +1,18 @@
 ﻿type        : agent.load_average
-label       : Load average check Exceeds 20
+label       : RS_Default_LoadAVG
 disabled    : false
+period      : 60
 timeout     : 30
 alarms      :
-   label    : Load average check Exceeds 20
-   notification_plan_id  : npTechnicalContactsEmail
-        criteria  :|
+    alarm1  :
+        label                 : Load average check Exceeds 20
+        notification_plan_id  : Rackspace Managed Operations - DevOps
+        criteria              : |
         if (metric['15m'] > 20) {
           return new AlarmStatus(CRITICAL, '15 Minute Load Average is #{15m}');
         }
         return new AlarmStatus(OK, '15 Minute Load Average is #{15m}');
+		
+		
+		
+		Load Average checks are not supported on Windows.
