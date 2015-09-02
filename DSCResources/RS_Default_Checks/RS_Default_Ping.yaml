@@ -1,10 +1,10 @@
 ﻿type: remote.ping
-label: RS_Default_Ping
+label: RS_Default_Ping_USZones
 disabled: false
 period: 60
 timeout: 30
 details:
-   count: 5
+    count: 5
 monitoring_zones_poll:
     - mzdfw
     - mziad
@@ -13,12 +13,14 @@ target_alias: public1_v4
 alarms:
     packet-loss:
         label: Ping v4 packet loss
-        notification_plan_id: Rackspace Managed Operations - DevOps
+        notification_plan_id: npTechnicalContactsEmail
         criteria: |
-        if (metric['available'] < 80) {
-          return new AlarmStatus(CRITICAL, 'Packet loss is greater than 20%');
-        }
-        if (metric['available'] < 95) {
-          return new AlarmStatus(WARNING, 'Packet loss is greater than 5%');
-        }
-        return new AlarmStatus(OK, 'Packet loss is normal');
+            if (metric['available'] < 80) {
+                return new AlarmStatus(CRITICAL, 'Packet loss is greater than 20%, availability at #{available}');
+            }
+
+            if (metric['available'] < 95) {
+                return new AlarmStatus(WARNING, 'Packet loss is greater than 5%, availability at #{available}');
+            }
+
+            return new AlarmStatus(OK, 'Packet loss is normal, availabitiy at #{available}');

@@ -8,7 +8,7 @@ details     :
 alarms      :
     alarm1  :
         label                 : disk used alarm
-        notification_plan_id  : Rackspace Managed Operations - DevOps
+        notification_plan_id  : npTechnicalContactsEmail
         criteria              : |
             if (percentage(metric['used'], metric['total']) > 90) {
                 return new AlarmStatus(CRITICAL, 'Less than 10% free space available.');
