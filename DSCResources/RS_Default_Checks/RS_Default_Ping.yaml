@@ -16,11 +16,11 @@ alarms:
         notification_plan_id: nplXhNJ7VI  #Rackspace Managed Operations - DevOps
         criteria: |
             if (metric['available'] < 80){
-                return new AlarmStatus(CRITICAL, 'Packet loss is greater than 20%, availability at #{available}');
+                return new AlarmStatus(CRITICAL, 'Packet loss is greater than 20%');
             }
 
             if (metric['available'] < 95){
-                return new AlarmStatus(WARNING, 'Packet loss is greater than 5%, availability at #{available}');
+                return new AlarmStatus(WARNING, 'Packet loss is greater than 5%');
             }
 
-            return new AlarmStatus(OK, 'Packet loss is normal, availabitiy at #{available}');
+            return new AlarmStatus(OK, 'Packet loss is normal');
