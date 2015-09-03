@@ -17,5 +17,11 @@
                  "ConfigURL":  "https://raw.githubusercontent.com/rsWinAutomationSupport/rsCloudMonitoring/rsConfigureMaaSAgent/DSCResources/RS_Default_Checks/RS_Default_Ping.yaml",
                  "ConfigPath":  "C:\\ProgramData\\Rackspace Monitoring\\config\\rackspace-monitoring-agent.conf.d\\RS_Default_Ping.yaml",
                  "CheckName":  "Ping"
+             },
+    "Network":  {
+                 "LocalURL":  "C:\\Program Files\\WindowsPowerShell\\Modules\\rsCloudMonitoring\\DSCResources\\RS_Default_Checks\\RS_Default_Network.yaml",
+                 "ConfigURL":  "https://raw.githubusercontent.com/rsWinAutomationSupport/rsCloudMonitoring/rsConfigureMaaSAgent/DSCResources/RS_Default_Checks/RS_Default_Network.yaml",
+                 "ConfigPath":  "C:\\ProgramData\\Rackspace Monitoring\\config\\rackspace-monitoring-agent.conf.d\\RS_Default_Network.yaml",
+                 "CheckName":  "Network"
              }
 }
