@@ -13,11 +13,11 @@ alarms:
            :set consecutiveCount=1
 
            if (rate(metric['rx_bytes']) > 104857600){
-               return new AlarmStatus(CRITICAL, "Network receive rate on public1 is above your critical threshold of 104857600B/s");
+               return new AlarmStatus(CRITICAL, "Network receive rate on the public NIC is above your critical threshold of 104857600B/s");
            }
 
            if (rate(metric['rx_bytes']) > 83886080){
-               return new AlarmStatus(WARNING, "Network receive rate on public1 is above your warning threshold of 83886080B/s");
+               return new AlarmStatus(WARNING, "Network receive rate on the public NIC is above your warning threshold of 83886080B/s");
            }
 
-           return new AlarmStatus(OK, "Network receive rate on public1 is below your warning threshold of 83886080B/s");
+           return new AlarmStatus(OK, "Network receive rate on the public NIC is below your warning threshold of 83886080B/s");
