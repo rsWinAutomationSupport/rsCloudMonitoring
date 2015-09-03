@@ -1,9 +1,9 @@
 {
-    "LoadAVG":  {
-                    "LocalURL":  "C:\\Program Files\\WindowsPowerShell\\Modules\\rsCloudMonitoring\\DSCResources\\RS_Default_Checks\\RS_Default_LoadAVG.yaml",
-                    "ConfigURL":  "https://raw.githubusercontent.com/rsWinAutomationSupport/rsCloudMonitoring/rsConfigureMaaSAgent/DSCResources/RS_Default_Checks/RS_Default_LoadAVG.yaml",
-                    "ConfigPath":  "C:\\ProgramData\\Rackspace Monitoring\\config\\rackspace-monitoring-agent.conf.d\\RS_Default_LoadAVG.yaml",
-                    "CheckName":  "LoadAVG"
+    "Memory":  {
+                    "LocalURL":  "C:\\Program Files\\WindowsPowerShell\\Modules\\rsCloudMonitoring\\DSCResources\\RS_Default_Checks\\RS_Default_Memory.yaml",
+                    "ConfigURL":  "https://raw.githubusercontent.com/rsWinAutomationSupport/rsCloudMonitoring/rsConfigureMaaSAgent/DSCResources/RS_Default_Checks/RS_Default_Memory.yaml",
+                    "ConfigPath":  "C:\\ProgramData\\Rackspace Monitoring\\config\\rackspace-monitoring-agent.conf.d\\RS_Default_Memory.yaml",
+                    "CheckName":  "Memory"
                 },
     "UsedDiskSpace":  {
                           "LocalURL":  "C:\\Program Files\\WindowsPowerShell\\Modules\\rsCloudMonitoring\\DSCResources\\RS_Default_Checks\\RS_Default_UsedDiskSpace.yaml",
