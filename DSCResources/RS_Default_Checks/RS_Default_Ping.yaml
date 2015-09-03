@@ -13,13 +13,13 @@ target_alias: public1_v4
 alarms:
     packet-loss:
         label: Ping v4 packet loss
-        notification_plan_id: nplXhNJ7VI
+        notification_plan_id: nplXhNJ7VI  #Rackspace Managed Operations - DevOps
         criteria: |
-            if (metric['available'] < 80) {
+            if (metric['available'] < 80){
                 return new AlarmStatus(CRITICAL, 'Packet loss is greater than 20%, availability at #{available}');
             }
 
-            if (metric['available'] < 95) {
+            if (metric['available'] < 95){
                 return new AlarmStatus(WARNING, 'Packet loss is greater than 5%, availability at #{available}');
             }
 
