@@ -21,5 +21,3 @@ alarms      :
            }
 
            return new AlarmStatus(OK, "Network receive rate on public1 is below your warning threshold of 83886080B/s");
-
-           ***Load Average checks are not supported on Windows.
