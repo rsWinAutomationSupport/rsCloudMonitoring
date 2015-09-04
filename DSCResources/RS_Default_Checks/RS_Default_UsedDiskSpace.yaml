@@ -1,0 +1,21 @@
+﻿type: agent.filesystem
+label: RS_Default_UsedDiskSpace
+disabled: false
+period: 60
+timeout: 30
+details:
+    target: C:\
+alarms:
+    alarm1:
+        label: Free Space Alert
+        notification_plan_id: nplXhNJ7VI  #Rackspace Managed Operations - DevOps
+        criteria: |
+            if (percentage(metric['used'], metric['total']) > 90){
+                return new AlarmStatus(CRITICAL, 'Less than 10% free space available.');
+            }
+
+            if (percentage(metric['used'], metric['total']) > 80){
+                return new AlarmStatus(WARNING, 'Less than 20% free space available.');
+            }
+
+            return new AlarmStatus(OK, 'Greater than 80% free space available.');

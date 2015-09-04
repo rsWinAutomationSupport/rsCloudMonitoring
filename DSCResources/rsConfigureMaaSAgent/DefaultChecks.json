@@ -1,0 +1,27 @@
+{
+    "Memory":  {
+                    "LocalURL":  "C:\\Program Files\\WindowsPowerShell\\Modules\\rsCloudMonitoring\\DSCResources\\RS_Default_Checks\\RS_Default_Memory.yaml",
+                    "ConfigURL":  "https://raw.githubusercontent.com/rsWinAutomationSupport/rsCloudMonitoring/rsConfigureMaaSAgent/DSCResources/RS_Default_Checks/RS_Default_Memory.yaml",
+                    "ConfigPath":  "C:\\ProgramData\\Rackspace Monitoring\\config\\rackspace-monitoring-agent.conf.d\\RS_Default_Memory.yaml",
+                    "CheckName":  "Memory"
+                },
+    "UsedDiskSpace":  {
+                          "LocalURL":  "C:\\Program Files\\WindowsPowerShell\\Modules\\rsCloudMonitoring\\DSCResources\\RS_Default_Checks\\RS_Default_UsedDiskSpace.yaml",
+                          "ConfigURL":  "https://raw.githubusercontent.com/rsWinAutomationSupport/rsCloudMonitoring/rsConfigureMaaSAgent/DSCResources/RS_Default_Checks/RS_Default_UsedDiskSpace.yaml",
+                          "ConfigPath":  "C:\\ProgramData\\Rackspace Monitoring\\config\\rackspace-monitoring-agent.conf.d\\RS_Default_UsedDiskSpace.yaml",
+                          "CheckName":  "UsedDiskSpace"
+                      },
+    "All":  "",
+    "Ping":  {
+                 "LocalURL":  "C:\\Program Files\\WindowsPowerShell\\Modules\\rsCloudMonitoring\\DSCResources\\RS_Default_Checks\\RS_Default_Ping.yaml",
+                 "ConfigURL":  "https://raw.githubusercontent.com/rsWinAutomationSupport/rsCloudMonitoring/rsConfigureMaaSAgent/DSCResources/RS_Default_Checks/RS_Default_Ping.yaml",
+                 "ConfigPath":  "C:\\ProgramData\\Rackspace Monitoring\\config\\rackspace-monitoring-agent.conf.d\\RS_Default_Ping.yaml",
+                 "CheckName":  "Ping"
+             },
+    "Network":  {
+                 "LocalURL":  "C:\\Program Files\\WindowsPowerShell\\Modules\\rsCloudMonitoring\\DSCResources\\RS_Default_Checks\\RS_Default_Network.yaml",
+                 "ConfigURL":  "https://raw.githubusercontent.com/rsWinAutomationSupport/rsCloudMonitoring/rsConfigureMaaSAgent/DSCResources/RS_Default_Checks/RS_Default_Network.yaml",
+                 "ConfigPath":  "C:\\ProgramData\\Rackspace Monitoring\\config\\rackspace-monitoring-agent.conf.d\\RS_Default_Network.yaml",
+                 "CheckName":  "Network"
+             }
+}

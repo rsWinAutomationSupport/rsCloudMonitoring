@@ -1,0 +1,6 @@
+[ClassVersion("1.0.0.0"), FriendlyName("rsConfigureMaaSAgent")]
+class rsConfigureMaaSAgent : OMI_BaseResource
+{
+	[Key, Description("Default Rackspace checks to load.")] String LoadDefaults;
+	[Write, Description("Area for customer checks (full URLs, in an array).")] String CustomChecks;
+};
