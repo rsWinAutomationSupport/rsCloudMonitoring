@@ -1,0 +1,6 @@
+[ClassVersion("1.0.0.0"), FriendlyName("rsRegisterMaaSAgent")]
+class rsRegisterMaaSAgent : OMI_BaseResource
+{
+	[key] string username;
+	[write, Description("Secure API Key."),EmbeddedInstance("MSFT_Credential")] String apikey;
+};
